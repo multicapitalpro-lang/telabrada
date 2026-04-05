@@ -1,0 +1,22 @@
+function ajustaAlturaMioloAlerta() {
+	try {
+		var windowParent = window.parent.parent;
+		if (windowParent.document != undefined) {
+			var iframeAutenticador = windowParent.document.getElementById('iframeAutenticador');
+			if (iframeAutenticador != null) {
+				var altura = Number(iframeAutenticador.height); // IE
+				if (isNaN(altura)) { // Others
+					altura = Number(iframeAutenticador.height.substring(0, iframeAutenticador.height.length - 2));
+				}
+				if (iframeAutenticador != null && !isNaN(altura) && altura != 0) {
+					iframeAutenticador.height = altura + 100;
+				}
+			}
+			if (windowParent.ajustaAlturaMiolo != undefined) {
+				windowParent.ajustaAlturaMiolo();
+			}
+		}
+	} catch (e) {
+		console.log(e);
+	}
+}

